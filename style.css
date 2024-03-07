@@ -1,0 +1,125 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("./3722440067-1872285-vgqM-1920x1080-MM-100.jpg");
+    background-size: cover;
+    background-position: center;
+    font-family: 'Arial', sans-serif;
+    color: #ffffff;
+    overflow-x: hidden; /* 横スクロールを制御 */
+}
+
+#sidebar {
+    position: fixed;
+    top: 0;
+    left: 0; /* 初期状態では表示 */
+    width: 200px;
+    height: 100%;
+    background-color: #111; /* タブの背景色 */
+    padding-top: 20px;
+}
+
+#toggleButton {
+    position: absolute;
+    top: 10px;
+    left: 180px; /* タブが左端に隠れたときの表示位置 */
+    font-size: 50px;
+    cursor: pointer;
+    color: #a10606;
+    background: none;
+    border: none;
+    padding: 5px; /* クリック領域を大きくする */
+}
+
+nav ul {
+    list-style: none;
+    padding: 10px;
+}
+
+nav ul li {
+    margin-bottom: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+#profile-image {
+    border-radius: 50%;
+    max-width: 200px;
+    margin: 20px auto;
+    display: block;
+}
+
+section {
+
+    overflow-y: auto; /* セクション内の縦方向にスクロール可能にする */
+    max-height: 1200px; /* 必要に応じてセクションの最大の高さを指定 */
+    overflow-y: hidden; /* 横方向のスクロールバーを非表示にする */
+    padding: 30px;
+    text-align: center;
+}
+
+section a {
+    color: #ff0000; /* 例: リンクの色を赤色に変更 */
+    /* ホバー時のスタイル */
+    transition: color 0.3s ease; /* カラー変化を滑らかにするトランジションを追加 */
+}
+
+section a:hover {
+    color: #00ff00; /* ホバー時の新しい色 */
+}
+
+#scrollToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 350px;
+    font-size: 24px;
+    background-color: #ff0000;
+    color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none; /* 初期状態では非表示 */
+    transition: background-color 0.3s ease;
+}
+
+#scrollToTop:hover {
+    background-color: #555;
+}
+
+
+#right-sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 100%;
+    background-color: #333; /* 右側ウィンドウの背景色 */
+    color: #fff; /* 右側ウィンドウの文字色 */
+    padding: 20px;
+    box-shadow: -5px 0 10px rgba(0, 0, 0, 0.5); /* 右側ウィンドウに影を追加 */
+}
+
+.image-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 400px;
+    margin: 0 auto;
+    overflow-x: hidden; /* 画像が横方向にはみ出た場合にスクロールバーを非表示にする */
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    width: 200px;
+    margin-right: 10px;
+}
