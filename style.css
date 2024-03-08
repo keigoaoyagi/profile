@@ -6,14 +6,13 @@ body {
     background-position: center;
     font-family: 'Arial', sans-serif;
     color: #ffffff;
-    overflow-x: hidden; /* 横スクロールを制御 */
 }
 
 #sidebar {
     position: fixed;
     top: 0;
     left: 0; /* 初期状態では表示 */
-    width: 200px;
+    width: 210px;
     height: 100%;
     background-color: #111; /* タブの背景色 */
     padding-top: 20px;
@@ -62,14 +61,18 @@ header {
 
     overflow-y: auto; /* セクション内の縦方向にスクロール可能にする */
     max-height: 1200px; /* 必要に応じてセクションの最大の高さを指定 */
-    overflow-y: hidden; /* 横方向のスクロールバーを非表示にする */
-    padding: 30px;
+    padding: 10px;
     text-align: center;
 }
 
 #section2 {
     padding: 30px;
     text-align: center;
+}
+
+#section3 {
+    text-align: center;
+    padding: 30px;
 }
 
 
@@ -118,14 +121,13 @@ section a:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 400px;
+    max-width: 450px;
     margin: 0 auto;
-    overflow-x: hidden; /* 画像が横方向にはみ出た場合にスクロールバーを非表示にする */
 }
 
 .image-container img {
     max-width: 100%;
     height: auto;
-    width: 200px;
-    margin-right: 10px;
+    width: 900px;
+    margin-right: 50px;
 }
